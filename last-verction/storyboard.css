@@ -1,0 +1,457 @@
+*
+{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'josefin sans',sans-serif
+}
+
+
+.page
+{
+
+color: beige; 
+background-size: cover;
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position:center ;
+
+
+
+}
+
+
+.navbar ul {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items:center;
+    background-color: rgb(188, 188, 188);
+    border-radius: 2%;
+    justify-content :center;
+    border:1cm beige ;
+
+
+  }
+
+.logo
+{
+width: 100px;
+
+
+
+
+
+}
+
+  .navbar ul li {
+ background-color: rgb(188, 188, 188);
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+
+    
+  }
+
+
+  .navbar ul li a {
+     padding: 20px 20px 20px 20px ; 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding-left :20%;
+    font-size: larger;
+    font-style :initial;
+     color: #f7fbff;
+    text-decoration: none;
+    border-radius: 20px;
+    border-style:solid  rgba(180, 180, 180, 0.647);
+    transition: 0.3s;
+    
+      }
+
+.active:hover
+{
+color: #011C2A;
+
+}
+
+
+
+.footer {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    padding: 30px 0;
+    border-radius: 5%;
+    background-color: rgb(188, 188, 188);
+    margin-top: .1%;
+  }
+  
+  .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: inherit;
+  }
+  
+  .footer .social a {
+    font-size: 24px;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 40px;
+    line-height: 38px;
+    display:inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 50;
+  }
+  
+  .footer .social a:hoover {
+    opacity: 9;
+  }
+  
+  .footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .footer ul li a {
+    color:  #ffffff;;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .footer ul li a:hover {
+    opacity: 1;
+  
+  }
+  
+  .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13;
+    color:  #ffffff;
+  }
+
+
+
+
+  .group1
+  {
+    display: inline-block;
+    margin-top:5%;
+    width: 105%;
+    height: 900px;
+   
+  }
+  .group2{
+    display: inline-block;
+    margin-left:5%;
+    margin-bottom: 5%;
+  
+  }
+  .flip-card {
+    display: inline-block;
+    background-color: transparent;
+    width: 30%;
+    height: 30%;
+    border: 1px solid white;
+    perspective: 1000px;
+    border-radius: 2%;
+    justify-content :center;
+  }
+  #centerCard{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    color: #011C2A;
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+  .flip-card-back #title1{
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'josefin sans',sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.group1 
+{
+  display: inline-block; 
+  margin-left:2%;
+  margin-top:2%;
+  width: 1500px;
+  height: 1000px;
+}
+.group2{
+  display: inline-block; 
+
+  margin-left:5%;
+
+}
+
+.flip-card {
+  display: inline-block;
+  background-color: transparent;
+  width: 30%;
+  height: 30%;
+  border: 1px solid white;
+  perspective: 1000px;
+  border-radius: 2%;
+    justify-content :center;
+  
+
+} 
+#centerCard{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari 
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) 
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side 
+.flip-card-back {
+  background-color: white;
+  color: #011C2A;
+  transform: rotateY(180deg);
+  text-align: center;
+ 
+}
+.flip-card-back #title1{
+  text-align: center;
+  margin-top: 15%;
+  font-family: 'josefin sans',sans-serif;
+}
+#group2{
+  margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    padding: 30px 0;
+    border-radius: 5%;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(188, 188, 188);
+    margin-top: .1%;
+  }
+  
+  .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: inherit;
+  }
+  
+  .footer .social a {
+    font-size: 24px;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 40px;
+    line-height: 38px;
+    display:inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 50;
+  }
+  
+  .footer .social a:hoover {
+    opacity: 9;
+  }
+  
+  .footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .footer ul li a {
+    color:  #ffffff;;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .footer ul li a:hover {
+    opacity: 1;
+  
+  }
+  
+  .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13;
+    color:  #ffffff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
